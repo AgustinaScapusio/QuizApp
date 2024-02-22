@@ -13,7 +13,7 @@ export default function Answers({answers, selectedAnswer, answerState, onSelect}
             const isSelected= selectedAnswer === answer;
             let cssClass = '';
             if(answerState === 'answered' && isSelected) {
-                cssClass = 'selected';}
+                cssClass = 'selected'}
             if((answerState === 'correct' || answerState === 'wrong')&&isSelected) {
                 cssClass = answerState; }
         return(
